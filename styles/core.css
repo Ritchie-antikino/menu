@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: black;
+}
+
+.wrapper {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Indie Flower", sans-serif;
+  color: gold;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.container {
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.product-card {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.product-card h4, p {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 4px;
+  background-color: rgba(255, 251, 26, 0.3);
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .product-card {
+    min-width: 300px;
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
